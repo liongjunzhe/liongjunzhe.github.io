@@ -1,0 +1,71 @@
+button.bg-request {
+
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: none;
+    margin: 10px;
+}
+
+button.bg-sign {
+    background-color: #68A061;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+button.bg-add {
+    background-color: #F1DD60;
+    color: rgb(0, 0, 0);
+    padding: 10px 45px;
+    border-radius: 30px;
+    border: none;
+    margin: 25px;
+    font-weight: bold;
+}
+
+button.bg-get {
+    background-color: #6E55A8;
+    color: rgb(255, 255, 255);
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    font-weight: bold;
+
+}
+
+button.bg-apply {
+    background-color: #3762BE;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+button.bg-download {
+
+    background-color: #FFFFFF;
+    color: #767A7D;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #A1A1A1;
+    margin: 15px;
+    font-weight: bold;
+}
+
+button.bg-save {
+    background-color: #ffffff;
+    color: #3762BE;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px;
+    border: 2px solid #3762BE;
+    font-weight: bold;
+}

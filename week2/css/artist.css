@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #EAE2D6;
+}
+
+h1 {
+    color: #8B9A6E;
+}
+
+button {
+    background-color: #30e427;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    font-weight: bold;
+}

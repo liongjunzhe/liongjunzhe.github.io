@@ -1,0 +1,15 @@
+.big-box {
+    display: flex;
+}
+
+.bg-yellow {
+    background-color: #FFF4A3;
+}
+
+.bg-pink {
+    background-color: #FFC0C7;
+}
+
+.bg-green {
+    background-color: #D9EEE1;
+}

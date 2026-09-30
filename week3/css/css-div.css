@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Isometra&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Serif+SC:wght@200..900&family=Playwrite+CA+Guides&display=swap');
+
+h1 {
+    font-family: "Isometra", serif;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 2px dashed #000;
+    border: 4px dashed #000;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px #a8da29;
+}
+
+p {
+    font-family: "Merriweather", serif;
+    font-size: 28px;
+    text-decoration: underline;
+    line-height: 4;
+    text-align: justify;
+    background-color: #4d437b;
+    background-image: url('/week3/image/sky.webp.jpeg');
+    background-size: cover;
+    background-position: top left;
+}
+
+h2 {
+    font-family: "Playwrite CA Guides", cursive;
+}
+
+h3 {
+    font-family: "Noto Serif SC", serif;
+}
+
+.text-bold {
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #b2eb2d;
+}

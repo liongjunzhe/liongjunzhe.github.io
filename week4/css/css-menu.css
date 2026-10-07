@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+.big-box {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Archivo', sans-serif;
+}
+
+
+.menu {
+    padding: 10px 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.orange {
+    color: #F9612B;
+}
+
+
+.call {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    background-color: #F9612B;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.search {
+    display: none;
+
+}
+
+@media (max-width: 800px) {
+    .menu {
+        display: none;
+    }
+
+    .search {
+        display: inline-block;
+    }
+
+    button {
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .call-icon {
+        display: none;
+    }
+
+    .call-text {
+        display: none;
+    }
+}

@@ -7,6 +7,9 @@
 body {
     margin: 0;
     font-family: "Manrope", sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff;
 }
 
 .banner {
@@ -88,16 +91,213 @@ body {
     text-align: center;
 }
 
-.red {
-    background-color: #F84646;
-    text-align: center;
-    color: white;
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.red2 {
-    display: flex;
-    flex-wrap: wrap;
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-red {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.btn-red:hover {
+    background-color: #e03e3e;
+}
+
+.hero-banner {
+    background-color: #ff4d4d;
+    color: #fff;
     text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-banner h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.hero-banner .subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    font-size: 0.95rem;
+    max-width: 180px;
+}
+
+.arrow {
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.content-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    gap: 40px;
+}
+
+.content-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-side {
+    flex: 1;
+}
+
+.text-side h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.text-side p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.image-side {
+    flex: 1;
+}
+
+.image-side img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.references-section {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.references-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.references-section p {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.logo-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+.cta-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cta-section p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.footer-col h4 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+.footer-col a:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    text-align: left;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+
+    .content-section,
+    .content-section.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features-grid {
+        flex-direction: column;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+    }
+
+    .footer-grid {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -144,5 +344,47 @@ body {
 
     .İletişim1 {
         display: block;
+    }
+
+    .features-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+
+        margin: -10px 0;
+    }
+
+    .feature-item {
+        max-width: 100%;
+    }
+
+    .content-section,
+    .content-section.reverse {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 15px;
+        gap: 20px;
+    }
+
+    .logo-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-card {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        text-align: center;
     }
 }

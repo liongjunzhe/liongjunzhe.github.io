@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+}
+
+.banner {
+    min-height: 500px;
+    background-image: url(../image/background.jpg);
+    background-size: cover;
+}
+
+.subscrine-button {
+    background-color: #F84646;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 3px;
+}
+
+.banner-content {
+    width: 50%;
+    padding: 60px;
+}
+
+.subscribe-form {
+    display: inline-block;
+    background-color: white;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.email {
+    border: none;
+}
+
+.email:focus {
+    outline: none;
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: right;
+    padding: 20px 70px;
+}
+
+.İletişim {
+    background-color: #F84646;
+    border: none;
+    padding: 15px 15px;
+    color: white;
+    border-radius: 4px;
+}
+
+.İletişim1 {
+    background-color: #F84646;
+    border: none;
+    padding: 15px 15px;
+    color: white;
+    border-radius: 4px;
+    display: none;
+}
+
+.hamberger {
+    justify-content: left;
+    display: none;
+    padding: 20px;
+}
+
+.topic {
+    text-align: center;
+}
+
+.middle {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-item {
+    width: 33%;
+    text-align: center;
+}
+
+.red {
+    background-color: #F84646;
+    text-align: center;
+    color: white;
+}
+
+.red2 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        background-position: center 50%;
+    }
+
+    .banner-content {
+        width: 70%;
+    }
+
+
+}
+
+@media (max-width: 800px) {
+
+
+    .banner {
+        background-position: center 80%;
+    }
+
+    .banner-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media (max-width:550px) {
+    .hamberger {
+        display: block;
+    }
+
+    .İletişim {
+        display: block;
+    }
+
+    .İletişim1 {
+        display: none;
+    }
+
+    .İletişim1 {
+        display: block;
+    }
+}

@@ -11,14 +11,63 @@ body {
 }
 
 .banner1 {
-    display: flex;
-    width: 100%;
-    max-width: 1100px;
+    display: flex !important;
+    flex-direction: row !important;
     justify-content: space-between;
-    padding: 20px 10px;
-    color: white;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    background-color: #000000;
+    color: #ffffff;
 }
 
+.romaliya {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 28px;
+    color: #ffffff;
+    letter-spacing: 2.5px;
+    line-height: 1;
+}
+
+.menu {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 28px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Work Sans", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+}
+
+.menu a:hover {
+    color: #cccccc;
+}
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+}
 
 .banner-bg {
     background-image: url('../image/image\ 134.png');
@@ -76,21 +125,207 @@ body {
     width: 100%;
 }
 
-.romaliya {
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.main-course {
+    background-color: #ffffff !important;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.grid-2 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch !important;
+    gap: 50px;
+    background-color: #ffffff !important;
+}
+
+.image-grid {
+    flex: 1;
+    width: 50%;
     display: flex;
-    gap: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+    display: block;
+}
+
+.menu-list {
+    flex: 1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-list h2 {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 42px;
+    color: #000000 !important;
+    letter-spacing: 1.5px;
+    margin: 0 0 20px 0;
+    line-height: 1;
+}
+
+.menu-item {
+    border-bottom: 1px solid #eaeaea !important;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-item:last-child {
+    border-bottom: none !important;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.item-header h3 {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 18px;
+    color: #000000 !important;
+    letter-spacing: 0.8px;
+    margin: 0;
+}
+
+.item-header .price {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333333 !important;
+}
+
+.menu-item p {
+    font-size: 12px;
+    color: #555555 !important;
+    line-height: 1.45;
+    margin: 0;
+}
+
+.dessert {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dessert .banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../image/image 138.png') center/cover;
+    height: 250px;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.dessert .banner h2 {
+    font-size: 32px;
     font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 4px;
 }
 
-.menu {
+.dessert-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.dessert-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.dessert-card h4 {
+    font-size: 12px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.cocktails {
+    background: linear-gradient(rgba(6, 6, 6, 0.7), rgba(51, 48, 48, 0.7)), url('../image/best croctails 1.png') center/cover;
+    color: #fff;
+    min-height: 450px;
     display: flex;
-    gap: 32px;
     align-items: center;
 }
 
-.hamberger {
-    display: none;
+.cocktails-container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cocktails-title {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 52px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin: 0 0 6px 0;
+    font-weight: 400;
+}
+
+.sub-title {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 11px;
+    color: #888888;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.divider {
+    width: 45px;
+    height: 1px;
+    background-color: #555555;
+    margin-bottom: 25px;
+}
+
+.cocktails-desc {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 13px;
+    color: #cccccc;
+    line-height: 1.6;
+    max-width: 340px;
+    margin-bottom: 35px;
+}
+
+.cocktails-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    color: #ffffff !important;
+    background-color: transparent !important;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+}
+
+.cocktails-btn:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
 }
 
 .footer-section {
@@ -186,92 +421,94 @@ body {
     transform: translateY(-3px);
 }
 
-@media (max-width: 1024px) and (min-width: 769px) {
-    .popular {
+@media (max-width: 1024px) {
+    .menu {
+        display: none !important;
+    }
+
+    .hamberger {
+        display: block !important;
+    }
+
+    .middlr {
         flex-direction: column;
         align-items: center;
-        gap: 40px;
+        padding: 30px 20px;
     }
 
-    .popular .food {
+    .food {
         width: 100%;
-        max-width: 600px;
+        height: 360px;
     }
 
-    .popular .specials {
-        order: 1;
+    .grid-2 {
+        flex-direction: column;
+        gap: 30px;
     }
 
-    .popular .dessert {
-        order: 2;
+    .image-grid,
+    .menu-list {
+        width: 100%;
     }
 
-    .popular .seasonal {
-        order: 3;
+    .image-grid img {
+        height: 320px;
     }
 
-    .popular .dessert .img,
-    .popular .specials .img,
-    .popular .seasonal .img {
-        height: 350px;
+
+    .dessert-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
     }
 
-    .atmosphere-section {
-        padding-left: 6%;
-        min-height: 450px;
+    .dessert-card img {
+        height: 380px;
+    }
+
+    .cocktails-container {
+        padding: 0 25px;
     }
 }
+
 
 @media (max-width: 768px) {
-    .popular {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
+    .banner1 {
+        padding: 15px 20px;
     }
 
-    .popular .food {
-        width: 100%;
+    .banner-bg {
+        padding: 50px 15px;
     }
 
-    .popular .specials {
-        order: 1;
+    .banner-bg h1 {
+        font-size: 36px;
     }
 
-    .popular .dessert {
-        order: 2;
+    .food {
+        height: 280px;
     }
 
-    .popular .seasonal {
-        order: 3;
+    .menu-list h2 {
+        font-size: 32px;
     }
 
-    .popular .dessert .img,
-    .popular .specials .img,
-    .popular .seasonal .img {
-        height: 260px;
+    .image-grid img {
+        height: 240px;
     }
 
-    .atmosphere-section {
-        padding: 60px 20px;
-        text-align: center;
-        justify-content: center;
+    .dessert-card img {
+        height: 280px;
     }
 
-    .atmosphere-content h2 {
-        font-size: 2.4rem;
-    }
-}
-
-@media (max-width: 1420px) {
-    .hamberger {
-        display: block;
+    .cocktails-title {
+        font-size: 38px;
     }
 
-    .menu {
-        display: none;
+    .cocktails-desc {
+        max-width: 100%;
     }
 
-    .romaliya {
-        padding: 20px 40px;
+    .footer-text {
+        font-size: 12px;
     }
 }

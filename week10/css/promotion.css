@@ -89,35 +89,135 @@ body {
     padding: 15px 20px;
 }
 
-.box-middle {
-    background-color: white;
-}
-
-.middle {
+/* 1. 整体白色区块：增加上下留白，还原老师图的呼吸感 */
+.seasonal-section {
+    background-color: #ffffff;
+    padding: 90px 20px;
     text-align: center;
+    color: #111111;
 }
 
-.middle-img {
-    display: flex;
-    max-width: 1400px;
+/* 收窄整体容器宽度，让三张椭圆靠得更紧凑 */
+.seasonal-container {
+    max-width: 960px;
     margin: 0 auto;
-    padding-top: 40px;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    text-align: center;
 }
 
-.middle-img1 {
-    flex: 1;
+/* ================== 顶部标题区 ================== */
+.section-header {
+    margin-bottom: 55px;
 }
 
-.middle-img2 {
-    flex: 1;
+/* Seasonal Specials：衬线体，字号放大 */
+.eyebrow {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: #222222;
 }
 
-.middle-img3 {
+/* Seasonal Specials 下方的浅灰色短横线 */
+.divider {
+    width: 45px;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 16px auto 22px;
+}
+
+/* A TASTE OF THE SEASON：窄长无衬线体，全大写 */
+.section-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #111111;
+    margin-bottom: 16px;
+}
+
+/* 顶部副标题：衬线体 */
+.section-subtitle {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 13.5px;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* ================== 三栏菜品卡片 ================== */
+.menu-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    /* 控制三张椭圆之间的紧凑间距 */
+}
+
+.menu-card {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 2. 饱满的竖向椭圆形图片 */
+.oval-img {
+    width: 100%;
+    max-width: 280px;
+    /* 控制椭圆宽度 */
+    height: 365px;
+    /* 高度大于宽度，形成竖椭圆 */
+    border-radius: 50%;
+    /* 核心代码：变成标准椭圆 */
+    overflow: hidden;
+    margin-bottom: 28px;
+}
+
+.oval-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 菜品名称：窄长全大写字体 */
+.dish-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #111111;
+    margin-bottom: 12px;
+}
+
+/* 菜品简介：衬线体，限制宽度使其自然折成两行 */
+.dish-desc {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #333333;
+    max-width: 240px;
+    margin-bottom: 22px;
+}
+
+/* 3. LEARN MORE 浅灰细边框按钮 */
+.btn-learn {
+    display: inline-block;
+    padding: 9px 26px;
+    border: 1px solid #cccccc;
+    /* 浅灰色细边框 */
+    color: #333333;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-learn:hover {
+    background-color: #111111;
+    color: #ffffff;
+    border-color: #111111;
 }
 
 .button1 button {
@@ -127,9 +227,668 @@ body {
     padding: 10px 10px;
 }
 
-.text-evening {
+.hero-banner {
     background-image: url('../image/image9.jpg');
     min-height: 400px;
     color: white;
     text-align: center;
+}
+
+/* 2. 外层容器：利用 Flexbox 让内部文字水平、垂直双居中 */
+.hero-banner {
+    width: 100%;
+    height: 450px;
+    /* 核心居中代码 */
+    display: flex;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+    text-align: center;
+    /* 多行文本自身居中对齐 */
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+/* 限制文字区域最大宽度，保证排版美观 */
+.hero-content {
+    max-width: 800px;
+}
+
+/* 顶部小字 */
+.subtitle {
+    font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #e0e0e0;
+    margin-bottom: 12px;
+}
+
+/* 中间大标题 */
+.main-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* 强制转为全大写，还原老师效果 */
+    letter-spacing: 1.5px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+/* 底部描述文字 */
+.description {
+    font-family: 'Lora', Georgia, serif;
+    /* 衬线体，还原老师效果 */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+/* ================== 错落图文展示区（精确画板坐标定位） ================== */
+.showcase-section {
+    background-color: #ffffff;
+    padding: 60px 20px 80px;
+    color: #111111;
+}
+
+/* 1. 固定宽高比的拼贴画板：完全复刻老师原图的整体比例 */
+.collage-board {
+    position: relative;
+    width: 100%;
+    max-width: 820px;
+    aspect-ratio: 820 / 1180;
+    /* 锁定画板比例，怎么缩放都不会错位 */
+    margin: 0 auto;
+}
+
+/* 2. 三张图片的通用样式 */
+.item-img {
+    position: absolute;
+    object-fit: cover;
+    display: block;
+}
+
+/* 第一张图：左上角大竖图 */
+.img-1 {
+    top: 0%;
+    left: 0%;
+    width: 58%;
+    height: 49%;
+    z-index: 1;
+}
+
+/* 第二张图：右侧中图（精准压在第一张图右下角上方） */
+.img-2 {
+    top: 39%;
+    right: 0%;
+    width: 44%;
+    height: 36%;
+    z-index: 2;
+}
+
+/* 第三张图：偏中下图（精准压在第二张图左下角上方） */
+.img-3 {
+    top: 68%;
+    left: 21%;
+    width: 37%;
+    height: 32%;
+    z-index: 3;
+}
+
+/* 3. 三段文字的通用样式与精确坐标 */
+.item-text {
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #111111;
+    white-space: nowrap;
+    z-index: 4;
+    /* 文字层级最高，绝不会被图片盖住 */
+}
+
+/* 第一段文字：位于第一张图右侧空白正中央 */
+.text-1 {
+    top: 23.5%;
+    left: 62%;
+}
+
+/* 第二段文字：位于第一张图下方、第三张图上方的空白正中央 */
+.text-2 {
+    top: 56%;
+    left: 17%;
+}
+
+/* 第三段文字：位于第二张图下方、第三张图右侧空白正中央 */
+.text-3 {
+    top: 84%;
+    left: 61%;
+}
+
+/* ================== 底部按钮与标语 ================== */
+.cta-footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.cta-tagline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.cta-tagline p {
+    font-family: sans-serif;
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.cta-tagline .line {
+    width: 24px;
+    height: 1px;
+    background-color: #999999;
+}
+
+.btn-reserve {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid #cccccc;
+    color: #222222;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-reserve:hover {
+    background-color: #111111;
+    color: #ffffff;
+    border-color: #111111;
+}
+
+/* ================== MEMBERSHIP TIER 横幅区 ================== */
+.membership-banner {
+    width: 100%;
+    height: 360px;
+    /* 高度比顶部主视觉横幅略矮一点，与老师设计比例一致 */
+
+    /* 替换为你自己的香槟倒酒背景图路径，叠加暗色遮罩保证白字清晰 */
+    background:
+        url('../image/hero182x 1.jpg');
+
+    /* 水平、垂直双居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+.membership-content {
+    max-width: 780px;
+}
+
+/* 居中全大写窄长标题 */
+.membership-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+/* 居中两行衬线体描述 */
+.membership-desc {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #f0f0f0;
+}
+
+/* ================== 三栏会员等级卡片区 ================== */
+.tier-cards-section {
+    background-color: #ffffff;
+    padding: 75px 20px 90px;
+}
+
+.tier-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+/* 单张会员卡片通用样式 */
+.tier-card {
+    flex: 1;
+    min-height: 440px;
+    /* 统一三张卡片的高度 */
+    padding: 36px 28px 34px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 三张卡片各自的背景图 + 半透明黑色遮罩 */
+.card-classic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url('../image/allan1.png');
+}
+
+.card-prestige {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url('../image/allan4.png');
+}
+
+.card-elite {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url('../image/all1.png');
+}
+
+/* 顶部等级名称 */
+.tier-name {
+    font-family: sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #dddddd;
+    margin-bottom: 18px;
+}
+
+/* 消费门槛标题（使用窄长字体 Oswald） */
+.tier-price {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+/* 权益列表：整体左对齐，使用衬线体 Lora */
+.tier-perks {
+    list-style: none;
+    width: 100%;
+    padding-left: 8px;
+    margin-bottom: 30px;
+}
+
+.tier-perks li {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 13.5px;
+    color: #f0f0f0;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* 列表项前面的白色实心五角星 */
+.tier-perks li::before {
+    content: '★';
+    font-size: 11px;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+/* 底部 APPLY 细边框按钮（margin-top: auto 保证三张卡片按钮水平对齐） */
+.btn-apply {
+    margin-top: auto;
+    display: inline-block;
+    width: 130px;
+    padding: 9px 0;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    color: #ffffff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-apply:hover {
+    background-color: #ffffff;
+    color: #111111;
+    border-color: #ffffff;
+}
+
+.footer-section {
+    position: relative;
+    width: 100%;
+    padding: 80px 20px;
+    background-image: url('../image/image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.footer-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.logo-box {
+    width: 38px;
+    height: 38px;
+    border: 1px dashed #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.footer-logo span {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+}
+
+.footer-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #cccccc;
+    margin-bottom: 35px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon-btn {
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.icon-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.icon-btn:hover {
+    transform: translateY(-3px);
+}
+
+.hamberger {
+    display: none;
+}
+
+/* ===================================================================
+   响应式适配：平板版 (<= 992px) & 手机版 (<= 767px)
+   =================================================================== */
+
+/* 1. 平板版适配 (屏幕宽度 768px ~ 992px) */
+@media (max-width: 992px) {
+
+    /* 顶部横幅与会员横幅适当减小高度 */
+    .hero-banner {
+        height: 380px;
+    }
+
+    .menu {
+        display: none !important;
+    }
+
+    .hamberger {
+        display: block;
+    }
+
+    /* 修复2：首屏 .bigbox 改为“图上文下” */
+    .bigbox {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .boximg {
+        width: 100%;
+        min-height: auto;
+        aspect-ratio: 4 / 3.6;
+    }
+
+    .box-taxt {
+        width: 100%;
+        padding: 45px 45px 55px;
+    }
+
+    .box-taxt h1 {
+        font-size: 40px;
+    }
+
+    /* Seasonal Specials 单列居中 */
+    .menu-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 55px;
+    }
+
+    .menu-card {
+        max-width: 340px;
+        width: 100%;
+    }
+
+    .hero-banner {
+        height: 340px;
+    }
+
+    .main-title {
+        font-size: 38px;
+    }
+
+    /* 修复3：拼贴区改为 3:4 竖长图，严格按“图1 -> 文1 -> 图2 -> 文2 -> 图3 -> 文3”排列 */
+    .collage-board {
+        aspect-ratio: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 380px;
+    }
+
+    .item-img {
+        position: static;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 4;
+        margin-bottom: 14px;
+    }
+
+    .item-text {
+        position: static;
+        white-space: normal;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .img-1 {
+        order: 1;
+    }
+
+    .text-1 {
+        order: 2;
+    }
+
+    .img-2 {
+        order: 3;
+    }
+
+    .text-2 {
+        order: 4;
+    }
+
+    .img-3 {
+        order: 5;
+    }
+
+    .text-3 {
+        order: 6;
+    }
+
+    .membership-banner {
+        height: 300px;
+    }
+
+    .membership-title {
+        font-size: 34px;
+    }
+
+    /* 会员卡片：2列网格（上2下1，第3张左对齐） */
+    .tier-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 620px;
+        gap: 28px;
+    }
+
+    .tier-card {
+        min-height: 400px;
+    }
+}
+
+/* ===================================================================
+   手机模式适配 (<= 767px)
+   =================================================================== */
+@media (max-width: 767px) {
+    .banner1 {
+        padding: 14px 20px;
+    }
+
+    .boximg {
+        aspect-ratio: 1 / 1.05;
+    }
+
+    .box-taxt {
+        padding: 36px 24px 48px;
+    }
+
+    .box-taxt h1 {
+        font-size: 34px;
+    }
+
+    .seasonal-section {
+        padding: 60px 20px;
+    }
+
+    .eyebrow {
+        font-size: 22px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .menu-card {
+        max-width: 300px;
+    }
+
+    .oval-img {
+        max-width: 270px;
+        height: 350px;
+    }
+
+    .hero-banner {
+        height: 290px;
+    }
+
+    .main-title {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 13.5px;
+    }
+
+    .description br,
+    .membership-desc br {
+        display: none;
+    }
+
+    .collage-board {
+        max-width: 300px;
+    }
+
+    .item-text {
+        font-size: 15px;
+        margin-bottom: 38px;
+    }
+
+    .membership-banner {
+        height: 270px;
+    }
+
+    .membership-title {
+        font-size: 28px;
+    }
+
+    .membership-desc {
+        font-size: 13px;
+    }
+
+    .tier-cards-section {
+        padding: 55px 20px 70px;
+    }
+
+    .tier-container {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        gap: 24px;
+    }
+
+    .tier-card {
+        min-height: 380px;
+    }
 }

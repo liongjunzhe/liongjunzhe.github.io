@@ -1,0 +1,876 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    background-color: #000000;
+
+}
+
+.banner1 {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    color: #ffffff;
+    position: absolute;
+}
+
+.romaliya {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 28px;
+    color: #ffffff;
+    letter-spacing: 2.5px;
+    line-height: 1;
+}
+
+.menu {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 28px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Work Sans", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+}
+
+.menu a:hover {
+    color: #cccccc;
+}
+
+.banner-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../image/cart.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    padding: 60px 20px;
+    padding-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.middlr1 {
+    background-color: white;
+    display: flex;
+    padding: 60px;
+    justify-content: center;
+}
+
+.our {
+    gap: 40px;
+    flex: 1;
+    color: rgb(2, 2, 2);
+}
+
+.button {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.button button {
+    background: transparent;
+    border: 1px solid rgb(133, 111, 111);
+    font-size: 11px;
+    font-family: "work sans", sans-serif;
+    cursor: pointer;
+    padding: 15px 40px;
+}
+
+.chef {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 60px 20px;
+    width: 100%;
+}
+
+.chef-text {
+    max-width: 1000px;
+    margin: 0 auto 30px auto;
+}
+
+.chef .bigbox {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+    gap: 30px !important;
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+}
+
+.whole1,
+.whole2 {
+    width: 48.5% !important;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+}
+
+.BUTTER-png img,
+.DUCK-png img {
+    width: 100% !important;
+    height: 380px !important;
+    object-fit: cover !important;
+    display: block;
+}
+
+.BUTTER-text,
+.DUCK-text {
+    width: 100% !important;
+    background-color: #333333 !important;
+    padding: 24px 20px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 80px auto;
+}
+
+.action-btn {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 14px 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.action-btn:hover {
+    opacity: 0.9;
+}
+
+.primary-btn {
+    background-color: #c4a47c;
+    border: none;
+    color: #ffffff;
+}
+
+.outline-btn {
+    background-color: transparent;
+    border: 1px solid #555555;
+    color: #ffffff;
+}
+
+.outline-btn:hover {
+    border-color: #777777;
+}
+
+.card-white-bg-section {
+    background-color: #ffffff !important;
+    padding: 60px 20px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.card-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    background-color: #000000 !important;
+}
+
+.card-left {
+    width: 50% !important;
+}
+
+.card-left img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+.card-right {
+    width: 50% !important;
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    padding: 50px 40px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+}
+
+.chef-signatures-section {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 80px 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-title {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin: 0 0 16px 0;
+}
+
+.description {
+    font-family: Georgia, serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #ccc;
+    margin: 0 0 24px 0;
+}
+
+.action-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.qty-box {
+    display: flex;
+    border: 1px solid #444;
+    height: 36px;
+}
+
+.qty-box button,
+.qty-box span {
+    background: transparent;
+    color: #fff;
+    border: none;
+    width: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.qty-box button:first-child {
+    border-right: 1px solid #444;
+}
+
+.qty-box button:last-child {
+    border-left: 1px solid #444;
+}
+
+.cart-btn {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    height: 36px;
+    padding: 0 20px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.bigbox {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.form {
+    color: white;
+}
+
+.chef-signatures-section {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 80px 20px;
+    width: 100%;
+}
+
+.section-header {
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+}
+
+.section-header .sub-title {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #888888;
+    margin-bottom: 6px;
+    font-family: sans-serif;
+}
+
+.section-header .main-title {
+    font-family: 'Bebas Neue', 'Impact', sans-serif;
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto 80px auto;
+}
+
+.product-card {
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-wrapper form,
+.card-right form {
+    border-bottom: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.card-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    max-width: 900px !important;
+    height: 420px !important;
+    margin: 0 auto !important;
+    background-color: #000000 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+.card-left {
+    width: 50% !important;
+    height: 100% !important;
+}
+
+.card-left img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+.card-right {
+    width: 50% !important;
+    height: 100% !important;
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    padding: 40px 50px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+}
+
+.card-right .sub-title {
+    font-size: 11px !important;
+    letter-spacing: 2px !important;
+    color: #888888 !important;
+    margin-bottom: 8px !important;
+}
+
+.card-right .main-title {
+    font-family: 'Bebas Neue', 'Impact', sans-serif !important;
+    font-size: 32px !important;
+    letter-spacing: 1.5px !important;
+    margin: 0 0 16px 0 !important;
+}
+
+.card-right .description {
+    font-family: Georgia, serif !important;
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+    color: #cccccc !important;
+    margin: 0 0 30px 0 !important;
+}
+
+.card-right .action-row,
+.card-right .qty-box {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+}
+
+.card-right .qty-box {
+    border: 1px solid #444444 !important;
+    height: 38px !important;
+}
+
+.card-right .qty-box button,
+.card-right .qty-box span {
+    background: transparent !important;
+    color: #ffffff !important;
+    border: none !important;
+    width: 32px !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 12px !important;
+}
+
+.card-right .cart-btn {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: none !important;
+    height: 38px !important;
+    padding: 0 24px !important;
+    font-size: 11px !important;
+    font-weight: bold !important;
+    letter-spacing: 1px !important;
+    cursor: pointer !important;
+}
+
+
+.product-title {
+    font-family: 'Bebas Neue', 'Impact', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 0 0 12px 0;
+    color: #ffffff;
+}
+
+.product-desc {
+    font-family: Georgia, serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #b0b0b0;
+    margin: 0 0 16px 0;
+    min-height: 54px;
+}
+
+.product-price {
+    font-size: 11px;
+    color: #888888;
+    margin-bottom: 18px;
+}
+
+.card-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+}
+
+form.card-qty-form {
+    display: flex !important;
+    width: 100% !important;
+    height: 38px !important;
+    border: 1px solid #555555 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-sizing: border-box;
+}
+
+form.card-qty-form .value-button {
+    width: 33.33% !important;
+    height: 100% !important;
+    background: transparent !important;
+    color: #ffffff !important;
+    border: none !important;
+    font-size: 13px !important;
+    cursor: pointer;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none !important;
+}
+
+form.card-qty-form .value-button:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+form.card-qty-form .decrease {
+    border-right: 1px solid #555555 !important;
+}
+
+form.card-qty-form .increase {
+    border-left: 1px solid #555555 !important;
+}
+
+form.card-qty-form input.quantity {
+    width: 33.33% !important;
+    height: 100% !important;
+    text-align: center;
+    border: none !important;
+    background: transparent !important;
+    color: #ffffff !important;
+    font-size: 13px !important;
+    font-family: inherit;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: none;
+    box-shadow: none !important;
+}
+
+form.card-qty-form input[type=number]::-webkit-inner-spin-button,
+form.card-qty-form input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btn {
+    height: 38px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    box-sizing: border-box;
+}
+
+.btn-add {
+    background-color: #c4a47c;
+    color: #ffffff;
+}
+
+.btn-view {
+    background-color: transparent;
+    border: 1px solid #555555;
+    color: #ffffff;
+}
+
+.checkout-footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkout-sub {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #888888;
+    margin-bottom: 8px;
+    font-family: sans-serif;
+}
+
+.checkout-title {
+    font-family: 'Bebas Neue', 'Impact', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    margin: 0 0 12px 0;
+}
+
+.checkout-desc {
+    font-family: Georgia, serif;
+    font-size: 12px;
+    color: #cccccc;
+    margin: 0 0 24px 0;
+}
+
+.btn-checkout {
+    background-color: #c4a47c;
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+
+.footer-section {
+    position: relative;
+    width: 100%;
+    padding: 80px 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../image/image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.footer-logo-img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.footer-logo-text {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 36px !important;
+    letter-spacing: 3px !important;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.footer-text {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #dddddd;
+    margin-bottom: 35px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.icon-btn {
+    width: 48px;
+    height: 48px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.icon-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.chef,
+.chef-signatures-section,
+.card-wrapper {
+    max-width: 1000px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.chef .bigbox {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 30px !important;
+}
+
+.chef .whole1,
+.chef .whole2 {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.chef .BUTTER-png img,
+.chef .DUCK-png img {
+    width: 100% !important;
+    height: 380px !important;
+    object-fit: cover !important;
+}
+
+.card-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.card-left,
+.card-right {
+    width: 50% !important;
+}
+
+.card-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 30px !important;
+}
+
+
+
+@media screen and (max-width: 1023px) {
+
+    .chef .bigbox {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+    }
+
+    .card-wrapper {
+        flex-direction: column !important;
+        max-width: 90% !important;
+    }
+
+    .card-left,
+    .card-right {
+        width: 100% !important;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .chef,
+    .chef-signatures-section,
+    .middlr1 {
+        padding: 40px 16px !important;
+    }
+
+    .chef .bigbox {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+
+    .card-wrapper {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .card-left,
+    .card-right {
+        width: 100% !important;
+        padding: 30px 20px !important;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+
+    .box,
+    .card-actions,
+    .action-row {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+
+    form.card-qty-form {
+        width: 100% !important;
+        margin-bottom: 8px !important;
+    }
+}
+
+
+
+
+form {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 33.33%;
+    height: 40px;
+    text-align: center;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+}
+
+.value-button:hover {
+    cursor: pointer;
+}
+
+form .decrease {
+    margin-right: -4px;
+}
+
+form .increase {
+    margin-left: -4px;
+}
+
+input.quantity {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 33.33%;
+    height: 40px;
+    background: transparent;
+    color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

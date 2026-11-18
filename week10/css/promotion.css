@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    background-color: black;
+}
+
+.banner1 {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    color: #ffffff;
+}
+
+.romaliya {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 28px;
+    color: #ffffff;
+    letter-spacing: 2.5px;
+    line-height: 1;
+}
+
+.menu {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 28px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Work Sans", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+}
+
+.menu a:hover {
+    color: #cccccc;
+}
+
+.bigbox {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.boximg {
+    background-image: url('../image/all1.png');
+    min-height: 800px;
+    flex: 1;
+    background-size: cover;
+}
+
+.box-taxt {
+    color: white;
+    flex: 1;
+}
+
+.button button {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding: 15px 20px;
+}
+
+.box-middle {
+    background-color: white;
+}
+
+.middle {
+    text-align: center;
+}
+
+.middle-img {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: center;
+}
+
+.middle-img1 {
+    flex: 1;
+}
+
+.middle-img2 {
+    flex: 1;
+}
+
+.middle-img3 {
+    flex: 1;
+}
+
+.button1 button {
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+}
+
+.text-evening {
+    background-image: url('../image/image9.jpg');
+    min-height: 400px;
+    color: white;
+    text-align: center;
+}
